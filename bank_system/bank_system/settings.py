@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Customer',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'bank_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bank_system',  # The database name you created
+        'USER': 'django_user',  # The username for MySQL
+        'PASSWORD': 'your_password',  # The password for MySQL user
+        'HOST': 'localhost',  # Set to 'localhost' if running MySQL locally
+        'PORT': '3306',  # Default MySQL port
     }
 }
 
