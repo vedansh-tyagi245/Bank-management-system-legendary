@@ -1,0 +1,6 @@
+python manage.py runserver
+.\env\Scripts\activate
+
+I will create a full fledge database using excel sheets or csv files for all types of data management things
+
+Mysql password = 
